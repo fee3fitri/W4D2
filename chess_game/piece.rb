@@ -1,9 +1,20 @@
 # require_relative 'board'
 
 class Piece
-    # def initialize(symbol, board, pos)
-    #     @color = symbol
-    #     @board = board
-    #     @pos = pos
-    # end
+attr_reader :color, :board, :pos
+
+    def initialize(symbol, board, pos)
+        @color = symbol
+        @board = board
+        @pos = pos
+    end
+
+    def moves
+        valid_pos = []
+        valid_pos
+    end
+
+    def empty?
+        return false
+    end
 end
